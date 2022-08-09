@@ -21,7 +21,7 @@ import br.ce.wcaquino.taskbackend.utils.ValidationException;
 public class TaskController {
 
 	@Autowired
-	private TaskRepo todoRepo;
+	public TaskRepo todoRepo;
 	
 	@GetMapping
 	public List<Task> findAll() {
